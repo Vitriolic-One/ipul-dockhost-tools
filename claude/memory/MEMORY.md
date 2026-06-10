@@ -1,0 +1,14 @@
+- [Post-cutover host state (2026-06-02)](post-cutover-state-2026-06-02.md) — what's live, what's dormant, what's queued for next
+- [Claude Remote Control setup gotchas](claude-remote-control-setup.md) — two non-obvious gates (trust flag + y/n stdin) when running `claude remote-control` as a daemon
+- [Task list eats screen real estate](feedback_task_list_screen_real_estate.md) — be sparing with TaskCreate; sweep stale tasks proactively
+- [Be specific about target environment in instructions](feedback_specific_environment_instructions.md) — "on your laptop" isn't enough; name the terminal app and OS-specific command
+- [Copyable items go in their own code block](feedback_copyable_items_standalone.md) — emails, URLs, IDs, commands: isolate in a fenced block, never inline in prose
+- [Handle it directly — don't make Bill type things](feedback_handle_directly_not_dictate.md) — Bill mistypes; Claude executes rather than dictates whenever possible
+- [Add prompted-on safe commands to allowlist proactively](feedback_proactive_allowlist.md) — if a clearly-safe Bash call prompted, add it to settings.json before the turn ends; don't wait to be asked
+- [Observations are not go signals](feedback_observations_are_not_go_signals.md) — ambiguous "ok" / musings / clarifying back-replies are NOT authorization for state-changing work; propose-and-stop a second time
+- [Backup around every major update](feedback_offer_backup_after_major_update.md) — PRE-deploy: ALWAYS auto-fire (standing order). POST-deploy: OFFER (don't auto-fire).
+- [Redact contact PII from permanent artifacts](feedback_redact_contact_pii.md) — verified intakes only; names/phones/emails/addresses → [redacted name]/[redacted phone number]/[redacted email]/[redacted address]; intake numbers OK
+- [Bill's laptop runs Windows 11](user_laptop_os.md) — Windows Terminal, winget/installer, OpenSSH built in
+- [Daily Drive backup pipeline — operating notes](project_backup_pipeline_live.md) — pipeline live since 2026-06-03; where things live, when to refresh, what's deliberately not wired
+- [Container DNS is pinned to 8.8.8.8 + 1.1.1.1](project_container_dns_pinned.md) — why it exists (Tailscale-stub gotcha at cutover), recreate-not-restart rule, diagnostic recipe
+- [On-box PDF regen via pandoc + xelatex](project_pdf_regen_onbox.md) — toolchain installed 2026-06-03; Drive push needs SA permissions on Intakeorama folder before it can be automated

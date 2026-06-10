@@ -1,0 +1,14 @@
+[Unit]
+Description=IPUL intake DB backup to Google Drive
+Documentation=file:///home/ipul-admin/ipul-intake-backup/backup.py
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/ipul-admin/ipul-intake-backup/backup.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

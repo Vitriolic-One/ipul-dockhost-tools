@@ -1,0 +1,17 @@
+[Unit]
+Description=Claude Code Remote Control (claude.ai/code session host)
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+Environment=HOME=%h
+ExecStart=/bin/bash -c "printf 'y\n' | /usr/bin/claude remote-control --name ipul-dockhost"
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily IPUL intake DB backup at 17:15 Mountain Time
+Documentation=file:///home/ipul-admin/ipul-intake-backup/backup.py
+
+[Timer]
+OnCalendar=*-*-* 17:15:00 America/Denver
+Persistent=true
+Unit=ipul-intake-backup.service
+
+[Install]
+WantedBy=timers.target
