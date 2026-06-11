@@ -41,7 +41,7 @@ Automated intake dispatch system for Idaho Parents Unlimited (IPUL), a nonprofit
 - **Production provider:** Google Gemini (`LLM_PROVIDER=google`, `LLM_MODEL=gemini-2.5-flash`)
 - **GCP Project:** `ipul-intake-system` (IPUL Intake System) — Gmail + Gemini consolidated here
 - **GCP Project (old):** `gen-lang-client-0304668277` (AI Studio auto-created, abandoned — AI Studio keys are permanently free tier)
-- **API key:** `[REDACTED-GCP-API-KEY-rotated-2026-06-11]` (GCP Console key, paid tier, created Mar 11)
+- **API key:** `[REDACTED-GCP-API-KEY — rotated 2026-06-11, see .env]` (GCP Console key, paid tier, created Mar 11)
 - **Model:** `gemini-2.5-flash` (upgraded from 2.0-flash which was retired for new projects)
 - **Status (Mar 11):** WORKING. Paid tier, AI classification live on `parents@` inbox.
 - **Supported providers in code:** OpenAI (`openai` pkg), Anthropic (`anthropic` pkg), Google (`google-genai>=1.0.0` pkg)
