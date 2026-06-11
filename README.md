@@ -36,8 +36,8 @@ bootstrap.sh         idempotent host-setup script: pre-flight checks,
 # 1. Install Docker + Claude Code (manual, ~10 min)
 # 2. Clone the three repos:
 git clone git@github.com:Vitriolic-One/ipul-intake.git
-git clone git@github.com:Vitriolic-One/ipul-dockhost-tools.git
-git clone git@github.com:Vitriolic-One/IPUL-Intake-Docs.git
+git clone git@github.com:IdahoParentsUnlimited/ipul-dockhost-tools.git
+git clone git@github.com:IdahoParentsUnlimited/IPUL-Intake-Docs.git
 
 # 3. Restore secrets from your offline backup into:
 #    ~/ipul-intake/.env
