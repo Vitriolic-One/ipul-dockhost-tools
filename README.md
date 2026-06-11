@@ -28,14 +28,14 @@ bootstrap.sh         idempotent host-setup script: pre-flight checks,
 - **Secrets** — `.env`, `secrets/gmail-service-account.json`, SSH deploy keys. These belong in an offline encrypted backup (1Password, encrypted Drive folder, hardware token). Never in git.
 - **The Python venv itself** — `host-scripts/requirements.txt` lists pinned dependencies; `bootstrap.sh` creates the venv on the new box. Avoids 50 MB+ of binaries in git.
 - **The docs vault** — `IPUL-Intake-Docs` lives as its own repo for clean separation. Cloned alongside.
-- **The intake system source** — `ipul-intake` is its own repo (`Vitriolic-One/ipul-intake`). Cloned alongside.
+- **The intake system source** — `ipul-intake` is its own repo (`IdahoParentsUnlimited/ipul-intake`). Cloned alongside.
 
 ## Quick start (on a fresh Debian box)
 
 ```bash
 # 1. Install Docker + Claude Code (manual, ~10 min)
 # 2. Clone the three repos:
-git clone git@github.com:Vitriolic-One/ipul-intake.git
+git clone git@github.com:IdahoParentsUnlimited/ipul-intake.git
 git clone git@github.com:IdahoParentsUnlimited/ipul-dockhost-tools.git
 git clone git@github.com:IdahoParentsUnlimited/IPUL-Intake-Docs.git
 

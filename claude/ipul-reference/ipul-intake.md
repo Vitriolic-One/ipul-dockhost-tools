@@ -18,7 +18,7 @@ Automated intake dispatch system for Idaho Parents Unlimited (IPUL), a nonprofit
 
 ## Architecture
 - **Runtime:** Python 3.11, Docker container on Dockhost (192.168.0.40)
-- **Repo:** `github.com/Vitriolic-One/ipul-intake` (private), cloned to `/home/mcpuser/ipul-intake`
+- **Repo:** `github.com/IdahoParentsUnlimited/ipul-intake` (private), cloned to `/home/mcpuser/ipul-intake`
 - **Local dev:** `C:\Users\vitri\Projects\ipul-intake`
 - **Database:** SQLite (WAL mode), `/app/data/intake.db` (Docker named volume)
 - **Slack:** Bolt SDK, Socket Mode (no public endpoint needed)

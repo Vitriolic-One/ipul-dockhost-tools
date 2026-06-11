@@ -24,7 +24,7 @@ You operate this box on Bill's behalf as a careful, attended copilot — Bill dr
 - **PYTHON ENV** — on this Linux host, use the project venv at ./venv (venv/bin/python), NOT bare python, and NOT venv/Scripts (that is the Windows dev path).
 
 ## Operating the intake system
-- **Code:** ~/ipul-intake (git remote origin = git@github.com:Vitriolic-One/ipul-intake, via deploy key ~/.ssh/github_ipul).
+- **Code:** ~/ipul-intake (git remote origin = git@github.com:IdahoParentsUnlimited/ipul-intake, via deploy key ~/.ssh/github_ipul).
 - **Deploy:** `cd ~/ipul-intake && git pull && docker compose up -d --build` (or scripts/deploy.sh). NOTE: `docker compose restart` does NOT reload .env — recreate the container for .env changes.
 - **Container:** ipul-intake. DB in named volume ipul-intake_intake-data (/app/data/intake.db). Secrets in .env + secrets/gmail-service-account.json (mounted read-only). Outbound-only (Socket Mode Slack; Gmail/Gemini/Salesforce over HTTPS) — no inbound ports.
 - **Docker access:** ipul-admin is in the docker group (effective after a fresh login); until then use `sudo docker`.

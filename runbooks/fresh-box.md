@@ -38,7 +38,7 @@ ssh-add ~/.ssh/github_ipul
 
 # Clone all three:
 cd ~
-git clone git@github.com:Vitriolic-One/ipul-intake.git
+git clone git@github.com:IdahoParentsUnlimited/ipul-intake.git
 git clone git@github.com:IdahoParentsUnlimited/ipul-dockhost-tools.git
 git clone git@github.com:IdahoParentsUnlimited/IPUL-Intake-Docs.git
 ```
