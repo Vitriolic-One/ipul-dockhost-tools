@@ -1,10 +1,14 @@
 {
   "theme": "dark",
   "permissions": {
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": ["/tmp"],
     "allow": [
       "Bash(tailscale:*)",
       "Bash(systemctl:*)",
       "Bash(claude:*)",
+      "Bash(docker *)",
+      "Bash(docker compose *)",
       "Bash(docker exec *)",
       "Bash(docker cp *)",
       "Bash(docker ps:*)",
@@ -68,6 +72,9 @@
       "Bash(/home/ipul-admin/ipul-intake/venv/bin/pip:*)",
       "Bash(/home/ipul-admin/ipul-intake/venv/bin/ruff:*)",
       "Bash(/home/ipul-admin/ipul-intake/venv/bin/mypy:*)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(pip *)",
       "Bash(python3 -m venv:*)",
       "Bash(python3 -m pytest:*)",
       "Bash(gh:*)",
@@ -83,7 +90,10 @@
       "Bash(git commit:*)",
       "Bash(git branch:*)",
       "Bash(git remote:*)",
-      "Bash(git show:*)"
+      "Bash(git show:*)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)",
+      "Bash(git stash*)"
     ]
   }
 }
